@@ -1,5 +1,21 @@
 $variant: 'dark';
 
-@import "theme/gnome-shell-sass/_colors"; 
+@import "theme/gnome-shell-sass/_colors";
 @import "theme/gnome-shell-sass/_drawing";
 @import "theme/gnome-shell-sass/_common";
+
+$font-family: "Arimo", Sans-Serif;
+
+stage {
+  font-family: $font-family;
+}
+
+#panel {
+  background: #2e3436 url(resource:///org/gnome/shell/theme/noise-texture.png);
+  background-repeat: repeat;
+  .panel-corner {
+    -panel-corner-radius: 0;
+    -panel-corner-background-color: transparent;
+    -panel-corner-border-color: transparent;
+  }
+}
